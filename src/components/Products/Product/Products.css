@@ -1,0 +1,30 @@
+.card{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: 400px auto;
+    background-color: lightgray;
+    padding:10px;
+}
+
+.cardContent {
+    grid-row: 1;
+    grid-column: span 2;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 250px auto;
+
+}
+
+.cardImage {
+    grid-row: 1;
+    height: auto;
+    width: 250px;
+}
+
+.cardButtonRow {
+    background-color: brown;
+}
+
+.cardButtonShopping{
+    background-color: red;
+}
