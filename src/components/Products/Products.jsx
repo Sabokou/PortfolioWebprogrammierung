@@ -2,8 +2,8 @@ import React from 'react';
 import Product from './Product/Product';
 
 const products = [
-    {id: 1, name: "HDMI Kabel", description: "Version 2.1, 1m", price: "4€", image: "https://klikglodok.com/komputer/wp-content/uploads/2012/08/hdmi-kabel-1024x768.jpg"},
-    {id: 2, name: "HDMI Kabel", description: "Version 2.1, 2m", price: "8€", image: "https://klikglodok.com/komputer/wp-content/uploads/2012/08/hdmi-kabel-1024x768.jpg"},
+    {id: 1, name: "HDMI Kabel", description: "Version 2.1, 1m", price: "4€", image: "https://www.cmple.com/content/images/thumbs/high-speed-hdmi-cable-with-ethernet-and-3d-25-feet_NID0007496.jpeg"},
+    {id: 2, name: "HDMI Kabel", description: "Version 2.1, 2m", price: "8€", image: "https://www.cmple.com/content/images/thumbs/high-speed-hdmi-cable-with-ethernet-and-3d-25-feet_NID0007496.jpeg"},
     {id: 3, name: "AUX Kabel", description: "Vergoldete Enden, 2m", price: "10€", image: "https://www.mobileworld.at/images/product_images/info_images/AUX%20Kabel%20Audio%20Male%20Male%20stecker%20Handyshop%20Linz.jpg"},
     {id: 4, name: "SATA Kabel", description: "0,2m", price: "0.6€", image: "https://www.lindy.co.uk/images/0-2m-sata-cable-latching-p3778-1695_zoom.jpg"},
     {id: 5, name: "USB-C Kabel", description: "USB 3.1 A auf C, 1,5m", price: "1.5€", image: "https://www.123elektronikk.no/billeder/usb-c-kabel-0-25m-sort-deltaco-usbc-1150-big.jpg"},

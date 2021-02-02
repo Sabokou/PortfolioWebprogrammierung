@@ -1,17 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
 import Products from'./components/Products/Products';
 
 
-import styles from './App.css';
+import './App.css';
 import './pages/cart/cart';
 import './pages/checkout/checkout';
 import './pages/home/home';
 
 const App = () => {
+  
+  const [products, setProducts] = useState([]);
+  
   return (
-    <div className={styles.flexContainer}>
+    <div class = "flexContainer">
       <Products />
     </div>
   );
