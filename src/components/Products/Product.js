@@ -1,7 +1,10 @@
-import React from 'react'
-import './Products.css'
+import React from 'react';
+import './Products.css';
+import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
-const Product = ({ product }) => {
+
+function generate_products(key, product, addToCart) {
+    console.log("generate_products called")
     return (
         <div class="card">
             <div class="cardContent">
@@ -11,10 +14,10 @@ const Product = ({ product }) => {
             </div>
             <div class="cardButtonRow">
                 <h5>Preis:{product.price}</h5>
-                <button class="cardButtonShopping"></button>
+                <button class="cardButtonShopping" onClick={() => addToCart(product)}></button>
             </div>
         </div> 
     )
 }
 
-export default Product;
+export default generate_products;

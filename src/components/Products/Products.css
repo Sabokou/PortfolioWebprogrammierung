@@ -1,4 +1,12 @@
-.card{
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  } 
+
+  .card{
     display: grid;
     grid-template-columns:130px 130px;
     grid-template-rows: 330px auto;
@@ -60,3 +68,11 @@
     grid-row: 1;
     grid-column: 2;
 }
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  } 

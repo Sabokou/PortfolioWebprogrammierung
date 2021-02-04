@@ -1,7 +1,4 @@
-import React from 'react';
-import Product from './Product/Product';
-
-const products = [
+const productlist = [
     {id: 1, name: "HDMI Kabel", description: "Version 2.1, 1m", price: "4€", image: "https://www.cmple.com/content/images/thumbs/high-speed-hdmi-cable-with-ethernet-and-3d-25-feet_NID0007496.jpeg"},
     {id: 2, name: "HDMI Kabel", description: "Version 2.1, 2m", price: "8€", image: "https://www.cmple.com/content/images/thumbs/high-speed-hdmi-cable-with-ethernet-and-3d-25-feet_NID0007496.jpeg"},
     {id: 3, name: "AUX Kabel", description: "Vergoldete Enden, 2m", price: "10€", image: "https://www.mobileworld.at/images/product_images/info_images/AUX%20Kabel%20Audio%20Male%20Male%20stecker%20Handyshop%20Linz.jpg"},
@@ -14,14 +11,4 @@ const products = [
     {id: 10, name: "SD Kartenlesegerät", description: "CF / SD / TF Ports, USB 3.0", price: "15€", image: "https://cdn.shopify.com/s/files/1/0056/9537/3423/products/SD_Card_Reader_WEme_1_1200x1200.jpg?v=1551868787"},
 ];
 
-const Products = () => {
-    return (
-        <div>
-            {products.map((product) =>(
-                <Product product = {product}/>
-            ))}      
-        </div>
-    )
-};
-
-export default Products;
+export default productlist
