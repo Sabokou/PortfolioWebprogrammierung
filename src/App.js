@@ -12,24 +12,25 @@ import cart from './pages/cart/cart';
 
 
 
-const App = () => {
+function App () {
   
   const {product} = productlist
   const [cartItems, setCartItems] = useState([]);
   
   
   const AddToCart = (product) => {
+    console.log("tried adding item", product.id)
     const exist = cartItems.find((x) => x.id === product.id);
-    let Menge = document.getElementById(product.name).value;
-    console.log(Menge);
+    let amount = document.getElementById(product.name).value;
+    console.log(amount);
     if (exist){
       setCartItems(
         cartItems.map((x) =>
-        x.id === product.id ? { ...exist, qty: parseInt(exist.qty)+parseInt(Menge) } : x
+        x.id === product.id ? { ...exist, qty: parseInt(exist.qty)+parseInt(amount) } : x
         )
       );
     } else {
-      setCartItems([...cartItems, {...product, qty: (Menge? Menge : 1)}])
+      setCartItems([...cartItems, {...product, qty: (amount? amount : 1)}])
     }
   };
 
