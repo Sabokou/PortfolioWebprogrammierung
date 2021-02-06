@@ -5,16 +5,17 @@ import './home.css';
 
 import GenerateProducts from '../.././components/Products/Product'
 import productlist from '../.././components/Products/productlist'
-
+import Navbar from '../.././components/Navbar/navbar'
 
 
 
 class Homepage extends React.Component {
     render() {
-        const {AddToCart, countCartItems} = this.props;
+        const {countCartItems, AddToCart} = this.props;
         console.log("home called")
         return (
-            <div className="flexContainer">              
+            <div className="flexContainer">
+                <Navbar amount = {countCartItems} />              
                 <div className="flexContainer">
                     {productlist.map(productlist =>  GenerateProducts(productlist.id, productlist, AddToCart))}
                 </div>
