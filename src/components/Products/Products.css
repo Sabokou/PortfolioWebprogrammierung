@@ -58,13 +58,27 @@
     grid-row: 4;
     grid-column: span 2;
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: min-width(auto, 10vh)
 
 }
 
 .cardButtonShopping{
-    background-color: red;
+    background-color: rgb(38, 99, 180);
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.cardButtonShopping:hover {
+    background-color: rgb(21, 74, 143);
+    color: white;
+}
+
+.cardItem{
+    background-color: grey;
+    vertical-align: center;
+    height: auto;
+    width: fill;
     grid-row: 1;
     grid-column: 2;
 }

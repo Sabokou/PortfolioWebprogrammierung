@@ -4,7 +4,6 @@ import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
 
 function GenerateProducts(key, product, addToCart) {
-    console.log(key, "generate_products called")
     return (
         <div className="card">
             <div className="cardContent">
@@ -14,8 +13,8 @@ function GenerateProducts(key, product, addToCart) {
             </div>
             <div className="cardButtonRow">
                 <h5>Preis:{product.price}</h5>
-                <div className="item"><input type="number" id={product.name} min="1" max="100" /></div>
-                <button className="cardButtonShopping" onClick={() => addToCart(product)}></button>
+                <div className="cardItem"><input type="number" id={product.name} min="1" max="100" /></div>
+                <button className="cardButtonShopping" onClick={() => addToCart(product)}>&#128722;</button>
             </div>
         </div> 
     )
