@@ -1,5 +1,5 @@
 import React, {useState } from 'react';
-import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 
 //import Products from'./components/Products/Products';
 import productlist from './components/Products/productlist'
@@ -24,8 +24,6 @@ function App () {
     
     const exist = cartItems.find((x) => x.id === product.id);
     let amount = document.getElementById(product.name).value;
-    
-    console.log(amount);
     
     if (exist){
       setCartItems(
@@ -73,7 +71,7 @@ function App () {
   return (
     <Router>
       <Route path='/' exact component = {(props) => <Homepage {...props} countCartItems={cartItems.length} AddToCart={AddToCart}/> }/>
-      <Route path='/cart' exact component = {(props) => <Cart {...props} Delete={DeleteItem} AddItem={IncreaseItemCount} DecreaseItem = {ReduceItemCount} cartItems={cartItems}/>}/>
+      <Route path='/cart' exact component = {(props) => <Cart {...props} DeleteItem={DeleteItem} AddItem={IncreaseItemCount} DecreaseItem = {ReduceItemCount} cartItems={cartItems}/>}/>
       <Route path='/checkout' exact component = {(props) => <Checkout {...props} cartItems={cartItems}/>}/>
     </Router>
   );
