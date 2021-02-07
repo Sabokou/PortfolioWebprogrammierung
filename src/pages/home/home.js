@@ -12,7 +12,6 @@ import Navbar from '../.././components/Navbar/navbar'
 class Homepage extends React.Component {
     render() {
         const {countCartItems, AddToCart} = this.props;
-        console.log("home called")
         return (
             <div className="flexContainer">
                 <Navbar amount = {countCartItems} />              
