@@ -1,14 +1,21 @@
 .productRow{
     display: grid;
-    grid-template-columns: repeat(6vw, 4) 40vw 12vw auto;
+    grid-template-columns: repeat(8vw, 5) 30vw 22vw;
     grid-template-rows: auto;
-    background-color: lightgray;
+    /*background-color: \w*;*/
     margin: 5px;
 }
 
-.button{
-    width: 6vw;
+.button {
+    width: 8vw;
+}
+
+.margins {
     margin-right: 5px;
+}
+
+.border {
+    border-bottom: 1px dashed;
 }
 
 .delete {
@@ -25,17 +32,26 @@
 
 .amount {
     grid-column: 4;
+    width: 8vw;
+    /*background-color: \w*;*/
 }
 
 .productName {
-    grid-column: 5;
-    width: 40vw;
+    grid-column: 6;
+    width: 30vw;
+    /*background-color: \w*;*/
 }
 
 .productPrice {
-    grid-column: 6;
+    grid-column: 5;
+    text-align: center;
+    width: 8vw;
+    /*background-color: \w*;*/
 }
 
 .productTotal {
     grid-column: 7;
+    text-align: right;
+    width: 22vw;
+    /*background-color: \w*;*/
 }
