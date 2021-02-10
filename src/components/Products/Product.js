@@ -13,7 +13,7 @@ function GenerateProducts(key, product, addToCart) {
             </div>
             <div className="cardButtonRow">
                 <h5>Preis:{product.price}</h5>
-                <div className="cardItem"><input type="number" id={product.name} min="1" max="100" /></div>
+                <div className="cardItem"><input type="number" id={product.name} min="1" max="100" placeholder="Menge" defaultValue="1" /></div>
                 <button className="cardButtonShopping" onClick={() => addToCart(product)}>&#128722;</button>
             </div>
         </div> 
