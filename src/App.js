@@ -65,14 +65,14 @@ function App () {
   };
 
   const DeleteAll = (product) => {
-    setCartItems(cartItems.filter((x) => x.id !== x.id))
+    setCartItems(cartItems.filter((x) => false))
   };
   
   return (
     <Router>
       <Route path='/' exact component = {(props) => <Homepage {...props} countCartItems={cartItems.length} AddToCart={AddToCart}/> }/>
       <Route path='/cart' exact component = {(props) => <Cart {...props} DeleteItem={DeleteItem} AddItem={IncreaseItemCount} DecreaseItem = {ReduceItemCount} cartItems={cartItems}/>}/>
-      <Route path='/checkout' exact component = {(props) => <Checkout {...props} cartItems={cartItems}/>}/>
+      <Route path='/checkout' exact component = {(props) => <Checkout {...props} cartItems={cartItems} DeleteAll = {DeleteAll}/>}/>
     </Router>
   );
 }
