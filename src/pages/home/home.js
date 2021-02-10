@@ -1,11 +1,12 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
-
-import './home.css';
 
 import GenerateProducts from '../.././components/Products/Product'
 import productlist from '../.././components/Products/productlist'
 import Navbar from '../.././components/Navbar/navbar'
+
+import './home.css';
+
+
 
 
 
