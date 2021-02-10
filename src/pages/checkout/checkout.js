@@ -1,20 +1,28 @@
-//import Products from '../.././components/Products/Product'
+import React from 'react';
+import {NavLink} from "react-router-dom";
+
+import GenerateCart from '../.././components/CartProducts/cartProduct'
+import Navbar from '../.././components/Navbar/navbar'
+
 import './checkout.css'
 
-import React from 'react';
-import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
-
-
+function Clicked(DeleteAll) {
+    DeleteAll();
+    alert("Kauf erfolgreich.\nKehre zur Startseite zurück.")
+};
 
 class Checkout extends React.Component {
+    
     render() {
-        const {cartItems} = this.props;
+        const {cartItems, DeleteAll} = this.props;
         console.log("checkout opened")
         return (
-            <div className="flexContainer">              
+            <div className="flexContainer"> 
+                <Navbar amount = {cartItems.length} />             
                 <div className="flexContainer">
-                    {productlist.map(productlist =>  GenerateProducts(productlist.id, productlist, AddToCart))}
+                    {cartItems.map(cartItems =>  GenerateCart(cartItems.name, cartItems, 0, 0 ,0))}
                 </div>
+                <NavLink to = "/"><button onClick = {() => Clicked(DeleteAll)}> DELETE </button></NavLink>
             </div> 
  
         );
