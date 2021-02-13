@@ -2,7 +2,7 @@
     display: grid;
     justify-content:left;
     grid-template-rows: 10vh;
-    grid-template-columns: 85vw 12vw;
+    grid-template-columns: 85vw 15vw;
     background-color: lightgray;
 }
 
