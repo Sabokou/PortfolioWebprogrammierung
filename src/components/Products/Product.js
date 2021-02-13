@@ -1,7 +1,6 @@
 import React from 'react';
-import './Products.css';
-import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
+import './Products.css';
 
 function GenerateProducts(key, product, addToCart) {
     return (
