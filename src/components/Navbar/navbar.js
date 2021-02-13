@@ -8,7 +8,7 @@ function Navbar (countCartItems) {
 
     return (<div className = "navbarGrid">
                     <NavLink to = '/'><h1 className = "gridTitel">Kabelsalat</h1></NavLink>
-                    <NavLink to='/cart' className = "gridCart">Warenkorb ({ itemCount })</NavLink>
+                    <NavLink to='/cart' className = "gridCart">&#128722;({ itemCount })</NavLink>
                 </div>)
    
 };
