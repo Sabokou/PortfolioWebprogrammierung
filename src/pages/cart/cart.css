@@ -1,7 +1,12 @@
 .gridContainer {
     display: grid;
     grid-template-columns: 90vw 10vw;
-    grid-template-rows: 10vh auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.navbar {
+    grid-row: 1;
+    grid-column: span 2;
 }
 
 .flexContainer {
@@ -19,9 +24,11 @@
 .sumField {
     grid-row: 3;
     grid-column: 2;
+    height: fit-content;
 }
 
 .purchaseButton {
     grid-row: 4;
     grid-column: 2;
+    height: 3vh;
 }
