@@ -1,0 +1,36 @@
+.productRow{
+    display: grid;
+    grid-template-columns: repeat(8vw, 3) 76vw;
+    grid-template-rows: 50px;
+    /*background-color: \w*;*/
+    margin: 5px;
+}
+
+.button {
+    width: 8vw;
+}
+
+.margins {
+    margin-right: 5px;
+}
+
+.border {
+    border-bottom: 1px dashed;
+}
+
+.delete {
+    grid-column: 1;
+}
+
+.add {
+    grid-column: 2;
+}
+
+.subtract {
+    grid-column: 3;
+}
+
+.productDetails {
+    grid-column: 4;
+    width: 76vw;
+}
