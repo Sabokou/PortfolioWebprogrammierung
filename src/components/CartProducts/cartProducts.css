@@ -1,0 +1,33 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(8vw, 2) 30vw 22vw;
+    grid-template-rows: 50px;
+    background-color: rgba(81, 185, 40, 0.541);
+    margin-right: 5px;
+}
+
+.amount {
+    grid-column: 1;
+    width: 8vw;
+    /*background-color: \w*;*/
+}
+
+.productName {
+    grid-column: 2;
+    width: 30vw;
+    background-color: red;
+}
+
+.productPrice {
+    grid-column: 3;
+    text-align: center;
+    width: 8vw;
+    /*background-color: \w*;*/
+}
+
+.productTotal {
+    grid-column: 4;
+    text-align: right;
+    width: 22vw;
+    background-color: lightsalmon ;
+}
