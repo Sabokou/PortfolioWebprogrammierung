@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 
 import Navbar from '../.././components/Navbar/navbar'
-import GenerateCart from '../.././components/CartProducts/cartProduct'
-import PageTitle from '../.././components/PageTitle/pagetitle'
+import GenerateCart from '../.././components/CartRow/cartRow'
+//import PageTitle from '../.././components/PageTitle/pagetitle'
 import CheckSum from '../.././components/CheckSum/checksum'
 import './cart.css'
 
@@ -12,14 +12,15 @@ class Cart extends React.Component {
     render() 
     {
         const {DeleteItem, AddItem , DecreaseItem, cartItems} = this.props;
-        console.log(cartItems);
+        //console.log(cartItems);
         return (
             <div className="gridContainer">
-                <Navbar amount = {cartItems.length} />
-                
+                <div className = "navbar">
+                    <Navbar amount = {cartItems.length} />
+                </div>
                 {cartItems.length > 0 ?
                     <>
-                        <div className="flexContainer">
+                        <div className = "flexContainer">
                             {cartItems.map(cartItems =>  GenerateCart(cartItems.name, cartItems, AddItem, DecreaseItem, DeleteItem))}
                         </div>
                         <div className = "purchaseButton">
