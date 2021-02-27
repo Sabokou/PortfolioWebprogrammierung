@@ -61,7 +61,7 @@ class Checkout extends React.Component {
                 <div className = "navbar">
                     <Navbar amount = {cartItems.length} />
                 </div>
-                <div className = "gridContainer-subgrid-entry row2 column1"></div>
+                <div className = "gridContainer-subgrid-entry row2 column1">
                     <input className = "row1 column1" id = "input1" placeholder = "Nachname" />
                     <input className = "row1 column1" id = "input2" placeholder = "Vorname" />
                     <input className = "row2 column1" id = "input3" placeholder = "Straße" />
@@ -69,7 +69,7 @@ class Checkout extends React.Component {
                     <input className = "row3 column1" id = "input5" type = "number" placeholder = "PLZ"/>
                     <input className = "row3 column2" id = "input6" placeholder = "Ort"/>
                     <input className = "row4 columnspan" id = "input7" type = "email" placeholder = "Email"/>
-
+                </div>
                 <div className = "flexContainer-subgrid-products">
                     <div className = "products">
                         {cartItems.map(cartItems =>  CartProducts(cartItems.id, cartItems))}
