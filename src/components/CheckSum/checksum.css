@@ -2,3 +2,9 @@
     text-align: right;
     margin-right: 7px;
 }
+
+.box {
+    border: 5px hidden black;
+    border-radius: 30px;
+    background: lightgray;
+}

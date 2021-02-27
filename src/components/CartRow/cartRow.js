@@ -16,7 +16,7 @@ function GenerateCart(key, cartItem, AddItem, DecreaseItem, DeleteItem) {
             <button className = "button margins border delete" onClick = {() => DeleteItem(cartItem)}>X</button>
             <button className = "button margins border add" onClick = {() => AddItem(cartItem)}>+</button>
             <button className = "button margins border subtract" onClick = {() => DecreaseItem(cartItem)}>-</button>
-            <div className = "productDetails">
+            <div className = "productDetails border">
                 {productsDiv}
             </div>                
         

@@ -8,8 +8,8 @@ function CheckSum({cartItems}) {
     //console.log(sum)
     //cartItems.forEach(item => console.log(item.price));
     return (
-        <div className = "sumField">
-           {sum}&euro; 
+        <div className = "sumField box">
+           Gesamt: {sum}&euro; 
         </div>
     )
 }

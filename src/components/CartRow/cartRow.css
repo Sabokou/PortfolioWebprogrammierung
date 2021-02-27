@@ -1,6 +1,6 @@
 .productRow{
     display: grid;
-    grid-template-columns: repeat(8vw, 3) 76vw;
+    grid-template-columns: repeat(8vw, 3) 69vw;
     grid-template-rows: 50px;
     /*background-color: \w*;*/
     margin: 5px;
@@ -32,5 +32,6 @@
 
 .productDetails {
     grid-column: 4;
-    width: 76vw;
+    width: 69vw;
+    height: 50px;
 }
