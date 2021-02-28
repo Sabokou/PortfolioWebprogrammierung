@@ -8,9 +8,16 @@ import './cartRow.css';
 
 function GenerateCart(key, cartItem, AddItem, DecreaseItem, DeleteItem) {
     //console.log("Called Generate cart with ID:", key, "Price of Item:", cartItem.price)
-    console.log("GC-Item", cartItem)
-    console.log(cartItem.qty)
+    //console.log("GC-Item", cartItem)
+    //console.log(cartItem.qty)
+    
+    //generates CartProducts div beforehand to embed later
     let productsDiv = CartProducts(cartItem.id, cartItem)
+
+    /*  
+        adds buttons to increment / decrement / remove item in cart 
+        appends the products div on the right side of row  
+    */
     return (
         <div className="productRow">
             <button className = "button margins border delete" onClick = {() => DeleteItem(cartItem)}>X</button>

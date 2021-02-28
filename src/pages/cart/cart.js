@@ -13,6 +13,8 @@ class Cart extends React.Component {
     {
         const {DeleteItem, AddItem , DecreaseItem, cartItems} = this.props;
         //console.log(cartItems);
+        
+        //based on if the cart is not empty will display cart page else will display an information to the user
         return (
             <div className="gridContainer">
                 <div className = "navbar">

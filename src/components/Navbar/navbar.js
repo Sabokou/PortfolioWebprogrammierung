@@ -3,7 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 import './navbar.css'
 
+//creates the design component navbar with cart button and link back to the home page 
 function Navbar (countCartItems) {
+    
+    
     let itemCount = countCartItems["amount"]
 
     return (<div className = "navbarGrid">

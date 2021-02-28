@@ -3,6 +3,7 @@ import React from 'react'
 import './cartProducts.css'
 
 function CartProducts(key, item) {
+    //generates multiple divs that have all information regarding an item in the cart
     return (
         <div className = "grid-container">
             <div className = "amount">{item.qty}x</div>

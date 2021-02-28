@@ -1,3 +1,4 @@
+//productlist as list of objects with information regarding the products
 const productlist = [
     {id: 0, name: "HDMI Kabel", description: "Version 2.1, 1m", price: "4€", image: "https://www.cmple.com/content/images/thumbs/high-speed-hdmi-cable-with-ethernet-and-3d-25-feet_NID0007496.jpeg"},
     {id: 1, name: "HDMI Kabel", description: "Version 2.1, 2m", price: "8€", image: "https://www.cmple.com/content/images/thumbs/high-speed-hdmi-cable-with-ethernet-and-3d-25-feet_NID0007496.jpeg"},

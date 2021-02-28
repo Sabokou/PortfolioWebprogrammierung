@@ -12,7 +12,9 @@ import './home.css';
 
 class Homepage extends React.Component {
     render() {
+        //unpacking props
         const {countCartItems, AddToCart} = this.props;
+        //will use GenerateProduct function to create individual product cards for all products in productlist
         return (
             <div className="flexContainer">
                 <Navbar amount = {countCartItems} />              

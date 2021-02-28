@@ -18,15 +18,20 @@ function getAllIndexes(arr, val) {
 
 class Checkout extends React.Component {
     
+    //function to check if all entries are present
     CheckEntries(DeleteAll){
+       
         let correct = [];
     
+        //iterate through all indexes of input fields
         for (let index = 1; index < 8; index++){
             
+
             //fetch value of html input field
             let str = "input".concat(index.toString());
             let value = document.getElementById(str).value;
             
+            //checks if value is present
             if ( value === "" ) {
                 correct.push("false")
             } else {
@@ -34,6 +39,7 @@ class Checkout extends React.Component {
             }
             
         }
+        //given that correct only has "true" entries it deletes all entries from cart and alerts user of success
         if ( correct.filter(x => x === "false").length === 0 ) {
             DeleteAll();
             alert("Kauf erfolgreich.\nKehre zur Startseite zurück.");
@@ -46,14 +52,15 @@ class Checkout extends React.Component {
         }
     };
 
+     //used in conjunction with CheckEntries to move user to different page on success
     registerSubmit(DeleteAll) {
-           
         if (this.CheckEntries(DeleteAll)) {
             this.props.history.push('/');
         }
     };
 
     render() {
+        //unpacking props
         const {cartItems, DeleteAll} = this.props;
         console.log("checkout opened")
         return (
@@ -82,5 +89,5 @@ class Checkout extends React.Component {
         );
     }
 };
-
+//withRouter used to be able to move user in with react code
 export default withRouter(Checkout);

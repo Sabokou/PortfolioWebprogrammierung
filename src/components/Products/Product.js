@@ -2,6 +2,7 @@ import React from 'react';
 
 import './Products.css';
 
+//generates a "product card"
 function GenerateProducts(key, product, addToCart) {
     return (
         <div className="card">

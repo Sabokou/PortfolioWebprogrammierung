@@ -3,6 +3,8 @@ import React from 'react';
 import './checksum.css'
 
 function CheckSum({cartItems}) {
+    //returns result of all prices * quantities in cart as div
+    
     //console.log(cartItems);
     let sum = cartItems.reduce((total,item) => total + parseFloat(item.price.substring(0, item.price.length - 1)) * item.qty,0);
     //console.log(sum)
