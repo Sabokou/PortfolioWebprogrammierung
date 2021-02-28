@@ -7,7 +7,27 @@
 }
 
 .button {
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:28px;
+	border:1px solid #29668f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
     width: 8vw;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.button:active {
+	position:relative;
+	top:1px;
 }
 
 .margins {
@@ -20,18 +40,22 @@
 
 .delete {
     grid-column: 1;
+    grid-row: 1;
 }
 
 .add {
     grid-column: 2;
+    grid-row: 1;
 }
 
 .subtract {
     grid-column: 3;
+    grid-row: 1;
 }
 
 .productDetails {
     grid-column: 4;
     width: 69vw;
     height: 50px;
+    grid-row: 1;
 }

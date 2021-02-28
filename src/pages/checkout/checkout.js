@@ -3,6 +3,7 @@ import { withRouter } from "react-router-dom";
 
 import CartProducts  from '../.././components/CartProducts/cartProducts'
 import Navbar from '../.././components/Navbar/navbar'
+import CheckSum from '../.././components/CheckSum/checksum'
 
 import './checkout.css'
 
@@ -69,17 +70,20 @@ class Checkout extends React.Component {
                     <Navbar amount = {cartItems.length} />
                 </div>
                 <div className = "gridContainer-subgrid-entry">
-                    <input className = "row1 column1" id = "input1" placeholder = "Nachname" />
-                    <input className = "row1 column2" id = "input2" placeholder = "Vorname" />
-                    <input className = "row2 column1" id = "input3" placeholder = "Straße" />
-                    <input className = "row2 column2" id = "input4" type = "number" min = "1" placeholder = "Hausnummer" />
-                    <input className = "row3 column1" id = "input5" type = "number" placeholder = "PLZ"/>
-                    <input className = "row3 column2" id = "input6" placeholder = "Ort"/>
-                    <input className = "row4 columnspan" id = "input7" type = "email" placeholder = "Email"/>
+                    <input className = "inputs row1 column1" id = "input1" placeholder = "Nachname" />
+                    <input className = "inputs row1 column2" id = "input2" placeholder = "Vorname" />
+                    <input className = "inputs row2 column1" id = "input3" placeholder = "Straße" />
+                    <input className = "inputs row2 column2" id = "input4" type = "number" min = "1" placeholder = "Hausnummer" />
+                    <input className = "inputs row3 column1" id = "input5" type = "number" placeholder = "PLZ"/>
+                    <input className = "inputs row3 column2" id = "input6" placeholder = "Ort"/>
+                    <input className = "inputs row4 columnspan" id = "input7" type = "email" placeholder = "Email"/>
                 </div>
                 <div className = "gridContainer-subgrid-products">
                     <div className = "products">
                         {cartItems.map(cartItems =>  CartProducts(cartItems.id, cartItems))}
+                    </div>
+                    <div className = "sum" >
+                        <CheckSum cartItems = {cartItems} />
                     </div>
                     <button className = "button" onClick = {() => this.registerSubmit(DeleteAll)}>Jetzt Kaufen!</button>
                 </div>

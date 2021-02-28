@@ -6,7 +6,7 @@
 
 .gridContainer-subgrid-products {
     display: grid;
-    grid-template-rows: auto auto ;
+    grid-template-rows: auto auto auto ;
     border-left: 1px solid;
 }
 
@@ -18,10 +18,19 @@
     align-items: flex-start;
   } 
 
-  .navbar {
+.navbar {
       height: 10vh;
       width: 100vw;
   }
+
+.inputs {
+    border: none;
+    border-bottom: 2px solid darkslategray;
+    margin-left: 3px;
+    margin-bottom: 5px;
+    padding-left: 2px;
+    font-size: 13;
+}
 
 .row1 {
     grid-row: 1;
@@ -55,7 +64,14 @@
     grid-row: 1;
 }
 
-.button {
+.sum {
+    grid-column: 1;
     grid-row: 2;
+    width: 8vw;
+    justify-self: end;
+}
+
+.button {
+    grid-row: 3;
     justify-self: end;
 }
